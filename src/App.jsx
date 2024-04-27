@@ -3,38 +3,36 @@ import './App.css';
 
 
 function App() {
-	// const [formErrors, setFormErrors] = useState('');
+	const [formErrors, setFormErrors] = useState('');
 
-	// const [form, setForm] = useState({
-	// 	nombre: '',
-	// 	apellido: '',
-	// 	correo: '',
-	// 	password: '',
-	// 	passwordRepeat: '',
-	// });
+	const [form, setForm] = useState({
+		nombre: '',
+		apellido: '',
+		correo: '',
+		password: '',
+		passwordRepeat: '',
+	});
 
-	// const onChange = (event) => {
-	// 	const { name, value } = event.target;
-
-	// 	setForm({
-	// 		...form,
-	// 		[name]: value,
-	// 	});
-	// };
-
-	// const handleErrors = (msg) => {
-	// 	setFormErrors(msg);
-	// };
+	const onChange = (event) => {
+		const { name, value } = event.targe
+		setForm({
+			...form,
+			[name]: value,
+		});
+	
+	const handleErrors = (msg) => {
+		setFormErrors(msg);
+	};
 
 	return (
 		<>
-			{/* <Register
+			{ <Register
 				onChange={onChange}
 				handleErrors={handleErrors}
 				formErrors={formErrors}
-			/> */}
+			/> }
 		</>
 	);
-}
+}}
 
 export default App;
