@@ -15,6 +15,7 @@ export const Register = ({ onChange, handleErrors, formErrors }) => {
 		<>
 			<h1>Crea una cuenta</h1>
 			<Redes icons={icons} />
+            <h4>O usa tu email para registrarte</h4>
 			<Formulario
 				onChange={onChange}
 				handleErrors={handleErrors}

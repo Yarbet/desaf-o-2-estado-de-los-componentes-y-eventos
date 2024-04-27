@@ -8,14 +8,13 @@ function App() {
 
 	const [form, setForm] = useState({
 		nombre: '',
-		apellido: '',
 		correo: '',
 		password: '',
 		passwordRepeat: '',
 	});
 
 	const onChange = (event) => {
-		const { name, value } = event.targe
+		const { name, value } = event.target;
 		setForm({
 			...form,
 			[name]: value,
