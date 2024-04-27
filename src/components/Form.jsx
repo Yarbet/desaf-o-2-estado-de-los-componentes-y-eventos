@@ -7,11 +7,10 @@ export const Formulario = ({ onChange, handleErrors }) => {
 		event.preventDefault();
 
 		const emailRegex = /^[A-Za-z0-9._%+-]+@[a-z._-]+\.[A-Za-z]{2,}$/;
-		const { nombre, apellido, correo, password, passwordRepeat } = event.target;
+		const { nombre, correo, password, passwordRepeat } = event.target;
 
 		if (
 			!nombre.value ||
-			!apellido.value ||
 			!correo.value ||
 			!password.value ||
 			!passwordRepeat.value
@@ -46,20 +45,8 @@ export const Formulario = ({ onChange, handleErrors }) => {
 					placeholder="Ingresa el nombre"
 					onChange={onChange}
 				/>
+			
 			</Form.Group>
-			<Form.Group
-				className="mb-3"
-				controlId="formBasicEmail"
-			>
-				<Form.Label>Apellido</Form.Label>
-				<Form.Control
-					name="apellido"
-					type="text"
-					placeholder="Ingresa Apellido"
-					onChange={onChange}
-				/>
-			</Form.Group>
-
 			<Form.Group
 				className="mb-3"
 				controlId="formBasicEmail"
