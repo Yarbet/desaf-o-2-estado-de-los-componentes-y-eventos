@@ -13,9 +13,10 @@ export const Register = ({ onChange, handleErrors, formErrors }) => {
 
 	return (
 		<>
-			<h1>Crea una cuenta</h1>
+        <div className='container'>
+            <h1>Crea una cuenta</h1>
 			<Redes icons={icons} />
-            <h4>O usa tu email para registrarte</h4>
+            <h6>O usa tu email para registrarte</h6>
 			<Formulario
 				onChange={onChange}
 				handleErrors={handleErrors}
@@ -24,6 +25,8 @@ export const Register = ({ onChange, handleErrors, formErrors }) => {
 				formErrors={formErrors}
 				color={formErrors === 'Registro exitoso' ? 'success' : 'danger'}
 			/>
+        </div>
+			
 		</>
 	);
 };

@@ -38,7 +38,7 @@ export const Formulario = ({ onChange, handleErrors }) => {
 				className="mb-3"
 				controlId="formBasicEmail"
 			>
-				<Form.Label>Nombre</Form.Label>
+				<Form.Label></Form.Label>
 				<Form.Control
 					name="nombre"
 					type="text"
@@ -51,7 +51,7 @@ export const Formulario = ({ onChange, handleErrors }) => {
 				className="mb-3"
 				controlId="formBasicEmail"
 			>
-				<Form.Label>Correo</Form.Label>
+				<Form.Label></Form.Label>
 				<Form.Control
 					name="correo"
 					type="email"
@@ -64,7 +64,7 @@ export const Formulario = ({ onChange, handleErrors }) => {
 				className="mb-3"
 				controlId="formBasicPassword"
 			>
-				<Form.Label>Password</Form.Label>
+				<Form.Label></Form.Label>
 				<Form.Control
 					name="password"
 					type="password"
@@ -77,7 +77,7 @@ export const Formulario = ({ onChange, handleErrors }) => {
 				className="mb-3"
 				controlId="formBasicPassword"
 			>
-				<Form.Label>Password Repeat</Form.Label>
+				<Form.Label></Form.Label>
 				<Form.Control
 					name="passwordRepeat"
 					type="password"
@@ -87,10 +87,10 @@ export const Formulario = ({ onChange, handleErrors }) => {
 			</Form.Group>
 
 			<Button
-				variant="primary"
+				variant="success"
 				type="submit"
 			>
-				Submit
+				Registrarse
 			</Button>
 		</Form>
 	);

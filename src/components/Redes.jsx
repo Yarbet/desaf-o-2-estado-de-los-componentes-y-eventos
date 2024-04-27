@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 export const Redes = ({ icons }) => {
 	return (
-		<div>
+		<div className='icons'>
 			{icons.map((icon, key) => (
 				<div key={key}>
 					<a href="">
